@@ -10,7 +10,9 @@ enum Message {
 }
 
 fn main() -> iced::Result {
-    iced::application("Daten-Dashboard", update, view).run()
+    iced::application("Daten-Dashboard", update, view)
+        .theme(|_| iced::Theme::Dark)
+        .run()
 }
 
 fn view(_app: &MyApp) -> Element<'_, Message> {
