@@ -11,7 +11,7 @@ enum Message {
 
 fn main() -> iced::Result {
     iced::application("Daten-Dashboard", update, view)
-        .theme(|_| iced::Theme::Dark)
+        .theme(|_| iced::Theme::CatppuccinMocha)
         .run()
 }
 
