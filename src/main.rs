@@ -10,8 +10,13 @@ enum Message {
 }
 
 fn main() -> iced::Result {
+    use iced::{window, Size};
     iced::application("Daten-Dashboard", update, view)
         .theme(|_| iced::Theme::CatppuccinMocha)
+        .window(window::Settings {
+            size: Size::new(800.0, 500.0),
+            ..window::Settings::default()
+        })
         .run()
 }
 
