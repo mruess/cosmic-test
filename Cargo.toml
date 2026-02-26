@@ -1,0 +1,7 @@
+[package]
+name = "mein_cosmic_tool"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libcosmic = { git = "https://github.com/pop-os/libcosmic", branch = "master", features = ["winit", "tokio"] }
